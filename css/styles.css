@@ -22,7 +22,7 @@
   --bs-gray-500: #adb5bd;
   --bs-gray-600: #6c757d;
   --bs-gray-700: #495057;
-249  --bs-gray-800: #343a40;
+  --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #ffc800;
   --bs-secondary: #6c757d;
@@ -2836,19 +2836,19 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #ffc800;
-  --bs-btn-border-color: #ffc800;
+  --bs-btn-bg: #6ca3cd;
+  --bs-btn-border-color: #6ca3cd;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #d9aa00;
-  --bs-btn-hover-border-color: #cca000;
+  --bs-btn-hover-bg: #4d7693;
+  --bs-btn-hover-border-color: #4d7693;
   --bs-btn-focus-shadow-rgb: 255, 208, 38;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #cca000;
-  --bs-btn-active-border-color: #bf9600;
+  --bs-btn-active-bg: #6ca3cd;
+  --bs-btn-active-border-color: #6ca3cd;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #ffc800;
-  --bs-btn-disabled-border-color: #ffc800;
+  --bs-btn-disabled-bg: #4d7693;
+  --bs-btn-disabled-border-color: #4d7693;
 }
 
 .btn-secondary {
@@ -10906,7 +10906,8 @@ p {
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #ffc800;
+  color: #95D8FF;
+  /* Menu Navigation color */
 }
 
 @media (min-width: 992px) {
@@ -11127,9 +11128,9 @@ header.masthead .masthead-heading {
   margin-left: 0;
   text-align: center;
   color: white;
-  border: 7px solid #e9ecef;
+  border: 5px solid #e9ecef;
   border-radius: 100%;
-  background-color: #ffc800;
+  background-color: #6ca3cd;   /* Be part of our story icon color*/
 }
 .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
   font-size: 10px;
