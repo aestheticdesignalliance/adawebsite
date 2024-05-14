@@ -32,7 +32,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 255, 200, 0;
+  --bs-primary-rgb: 108, 163, 205; /* Services Icons Color */
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -63,8 +63,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #ffc800;
-  --bs-link-hover-color: #cca000;
+  --bs-link-color: #2196F3;
+  --bs-link-hover-color: #2979FF;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff4cc;
 }
@@ -1103,6 +1103,7 @@ progress {
   .col-md-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
+    margin-bottom: 1.5em;
   }
   .col-md-5 {
     flex: 0 0 auto;
@@ -2836,15 +2837,15 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #6ca3cd;
-  --bs-btn-border-color: #6ca3cd;
+  --bs-btn-bg: #1769AA;
+  --bs-btn-border-color: #1769AA;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #4d7693;
-  --bs-btn-hover-border-color: #4d7693;
+  --bs-btn-hover-bg: #1C54B2;
+  --bs-btn-hover-border-color: #1C54B2;
   --bs-btn-focus-shadow-rgb: 255, 208, 38;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #6ca3cd;
-  --bs-btn-active-border-color: #6ca3cd;
+  --bs-btn-active-bg: #1769AA;
+  --bs-btn-active-border-color: #1769AA;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #4d7693;
@@ -3760,13 +3761,8 @@ textarea.form-control-lg {
   padding-top: var(--bs-navbar-brand-padding-y);
   padding-bottom: var(--bs-navbar-brand-padding-y);
   margin-right: var(--bs-navbar-brand-margin-end);
-  font-size: var(--bs-navbar-brand-font-size);
-  color: var(--bs-navbar-brand-color);
   text-decoration: none;
   white-space: nowrap;
-}
-.navbar-brand:hover, .navbar-brand:focus {
-  color: var(--bs-navbar-brand-hover-color);
 }
 
 .navbar-nav {
@@ -4154,7 +4150,7 @@ textarea.form-control-lg {
   --bs-card-cap-color: ;
   --bs-card-height: ;
   --bs-card-color: ;
-  --bs-card-bg: #fff;
+  --bs-card-bg: #f0f0f0;
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
   position: relative;
@@ -4168,9 +4164,50 @@ textarea.form-control-lg {
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
 }
+
+/* Contact section cards */
+.contact-section {
+  padding-top: 5rem;
+  padding-bottom: 9rem;
+}
+.contact-section .card h4, .contact-section .card .h4 {
+  font-size: 0.8rem;
+  letter-spacing: 0.15rem;
+}
+.contact-section .card hr {
+  opacity: 1;
+  border-color: #64a19d;
+  border-width: 0.25rem;
+  width: 3rem;
+}
+.contact-section .social {
+  margin-top: 5rem;
+}
+.contact-section .social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+.contact-section .social a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.contact-section .social a:active {
+  color: #fff;
+}
+
 .card > hr {
   margin-right: 0;
   margin-left: 0;
+}
+.contact-section .card hr {
+  opacity: 1;
+  border-color: #6CA3CD;
+  border-width: 0.25rem;
+  width: 3rem;
 }
 .card > .list-group {
   border-top: inherit;
@@ -8017,13 +8054,11 @@ textarea.form-control-lg {
   white-space: nowrap !important;
 }
 
-/* rtl:begin:remove */
 .text-break {
   word-wrap: break-word !important;
   word-break: break-word !important;
 }
 
-/* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
@@ -10841,6 +10876,14 @@ p {
 .section-text {
   color: #C4C4C4 !important; 
 }
+.custom-icon {
+  position: absolute;
+  height: 50%; 
+  width: 50%; 
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
@@ -10907,7 +10950,7 @@ p {
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: #95D8FF;
-  /* Menu Navigation color */
+  /* Menu Items Hover color */
 }
 
 @media (min-width: 992px) {
@@ -10934,9 +10977,10 @@ p {
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
   }
+  /* Top home page logo size on scroll */
   #mainNav.navbar-shrink .navbar-brand svg,
   #mainNav.navbar-shrink .navbar-brand img {
-    height: 1.5rem;
+    height: 2rem;
   }
   #mainNav .navbar-nav .nav-item {
     margin-right: 1rem;
@@ -11130,7 +11174,7 @@ header.masthead .masthead-heading {
   color: white;
   border: 5px solid #e9ecef;
   border-radius: 100%;
-  background-color: #6ca3cd;   /* Be part of our story icon color*/
+  background-color: #1769AA;   /* Be part of our story icon color*/
 }
 .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
   font-size: 10px;
