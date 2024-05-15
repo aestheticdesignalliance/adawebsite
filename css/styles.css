@@ -4165,12 +4165,34 @@ textarea.form-control-lg {
   border-radius: var(--bs-card-border-radius);
 }
 
+/* Reviews section cards */
+.reviews-section {
+  padding-top: 2rem;
+  padding-bottom: 7rem;
+}
+.stars-icon {
+  position: relative;
+  height: 50%; 
+  width: 50%; 
+}
+.review-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.review-text {
+  font-size: 1rem;
+}
+.text-left {
+  text-align: left;
+}
+
+
 /* Contact section cards */
 .contact-section {
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 9rem;
 }
-.contact-section .card h4, .contact-section .card .h4 {
+.contact-section .card h4, .reviews-section .card .h4 {
   font-size: 0.8rem;
   letter-spacing: 0.15rem;
 }
