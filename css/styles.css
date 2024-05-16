@@ -11448,6 +11448,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 /* Portfolio Modals */
+
 .portfolio-modal .btn-close {
   color: #1abc9c;
   font-size: 2rem;
@@ -11457,6 +11458,16 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 2.25rem;
   line-height: 2rem;
 }
+.portfolio-modal-title {
+  color: #212529 !important;
+}
+.portfolio-modal-container {
+  margin-top: 3rem;
+}
+.modal-paragraph {
+  text-align: left;
+}
+
 @media (min-width: 992px) {
   .portfolio-modal .portfolio-modal-title {
     font-size: 3rem;
