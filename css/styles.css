@@ -1275,6 +1275,10 @@ progress {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
+  .col-modal {
+    flex: 0 auto;
+    width: 50%;
+  }
   .col-lg-5 {
     flex: 0 0 auto;
     width: 41.66666667%;
