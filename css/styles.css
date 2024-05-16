@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* Styling Variables */
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -11083,13 +11084,13 @@ margin-bottom: 1rem;
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
-  padding: 10px 15px 8px 15px;
+  padding: 0.65rem 1rem 0.5rem 1rem;
   font-size: 14px;
   font-weight: 600;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 1;
   color: #5a656e;
-  margin-bottom: 5px;
+  margin-bottom: 0.313rem;
   transition: all 0.3s ease-in-out;
 }
 .portfolio-btns {
@@ -11134,7 +11135,7 @@ margin-bottom: 1rem;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #fff;
   font-weight: 600;
 }
@@ -11160,7 +11161,7 @@ margin-bottom: 1rem;
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #fff;
   margin: 0 2px;
-  font-size: 28px;
+  font-size: 1.75rem;
   display: inline-block;
   transition: 0.3s;
 }
@@ -11187,8 +11188,7 @@ margin-bottom: 1rem;
   bottom: calc(50% - 50px);
 }
 
-
-
+/* Timeline */
 .timeline {
   position: relative;
   padding: 0;
@@ -11356,6 +11356,8 @@ margin-bottom: 1rem;
     padding: 0 100px 20px 20px;
   }
 }
+
+/* Our Team Section */
 .team-member {
   margin-bottom: 3rem;
   text-align: center;
@@ -11374,6 +11376,7 @@ margin-bottom: 1rem;
   height: 2.75rem;
 }
 
+/* Contact Us Section */
 section#contact {
   background-color: #212529;
   background-image: url("../assets/img/map-image.png");
@@ -11428,6 +11431,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   color: #ced4da;
 }
 
+/* Footer */
 .footer {
   text-align: center;
   font-size: 0.9rem;
