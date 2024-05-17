@@ -11217,6 +11217,7 @@ margin-bottom: 1rem;
   content: "";
   background-color: #e9ecef;
 }
+
 .timeline > li {
   position: relative;
   min-height: 50px;
@@ -11261,38 +11262,6 @@ margin-bottom: 1rem;
   border-radius: 100%;
   background-color: #1769AA;   /* Be part of our story icon color*/
 }
-
-/* Timeline animation */
-.timeline-line {
-  position: absolute;
-  width: 2px;
-  background-color: #e9ecef;
-  transition: height 1s ease-out;
-  height: 0; /* Initial state */
-}
-
-.timeline > li .timeline-panel::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border: 0 solid transparent;
-}
-
-.timeline > li .timeline-panel::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border: 0 solid transparent;
-}
-
 
 .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
   font-size: 10px;
