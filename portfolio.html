@@ -17,6 +17,8 @@
         <!--  Isotope library CDN -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+      <!-- AOS CSS files -->
+      <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     
 </head>
@@ -43,12 +45,12 @@
     <!-- Portfolio Section -->
     <section class="page-section portfolio bg-main" id="portfolio">
         <div class="container">
-          <div class="text-center portfolio-heading">
+          <div class="text-center portfolio-heading" data-aos="fade-in">
             <h2 class="portfolio-text section-title text-uppercase">Portfolio</h2>
           </div>
   
           <div class="row">
-            <div class="col-lg-12 d-flex justify-content-center portfolio-btns">
+            <div class="col-lg-12 d-flex justify-content-center portfolio-btns" data-aos="fade-in">
               <ul id="portfolio-flters">
                 <li data-filter="*" class="filter-active">All</li>
                 <li data-filter=".filter-residential">Residential</li>
@@ -58,7 +60,7 @@
             </div>
           </div>
   
-          <div class="row portfolio-container">
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="300">
             <!-- Portfolio Item 1 -->
             <div class="col-lg-4 col-md-6 portfolio-item filter-residential">
               <div class="portfolio-wrap" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
@@ -739,5 +741,9 @@
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
 </body>
 </html>
