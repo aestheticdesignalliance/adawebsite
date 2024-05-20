@@ -4171,10 +4171,6 @@ textarea.form-control-lg {
 }
 
 /* Reviews section cards */
-.reviews .reviews-carousel,
-.reviews .reviews-slider {
-  overflow: hidden;
-}
 
 .reviews-section {
   padding-top: 2rem;
