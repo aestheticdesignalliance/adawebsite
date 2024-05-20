@@ -33,7 +33,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 108, 163, 205; /* Services Icons Color */
+  --bs-primary-rgb: 108, 163, 205; /* Services Icons Color #6CA3CD*/
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -11444,6 +11444,69 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   color: #ced4da;
+}
+
+/* Process and estimation section*/
+.proces-est {
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .list-section {
+    position: relative;
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+}
+.icon-box {
+  margin-bottom: 2rem;
+}
+.icon {
+float: left;
+margin-right: 2rem;
+color: #6ca3cd;
+font-size: 35px;
+}
+
+@media (min-width: 769px) {
+  .list-section {
+    position: relative;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+
+
+/* Facts section */
+.facts .count-box {
+  width: 100%;
+}
+.facts .count-box i {
+  display: block;
+  font-size: 44px;
+  color: #6CA3CD; /* Number icons color */
+  float: left;
+  line-height: 0;
+}
+
+.facts .count-box span {
+  font-size: 48px;
+  line-height: 40px;
+  display: block;
+  font-weight: 700;
+  margin-left: 60px;
+}
+
+.facts .count-box p {
+  padding: 15px 0 0 0;
+  margin: 0 0 0 60px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+
+}
+.facts-numbers {
+  color: rgba(241, 241, 241, 0.8); /* Numbers color (80% opacity) */;
+  opacity: calc();
+  font-size: 4rem;
 }
 
 /* Footer */
