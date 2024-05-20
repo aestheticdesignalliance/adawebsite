@@ -4171,6 +4171,11 @@ textarea.form-control-lg {
 }
 
 /* Reviews section cards */
+.reviews .reviews-carousel,
+.reviews .reviews-slider {
+  overflow: hidden;
+}
+
 .reviews-section {
   padding-top: 2rem;
   padding-bottom: 7rem;
@@ -11050,6 +11055,7 @@ header.masthead .masthead-heading {
   line-height: 3.25rem;
   margin-bottom: 2rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #D1EEFF; /* Website title color */
 }
 
 @media (min-width: 768px) {
@@ -11447,14 +11453,11 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 /* Process and estimation section*/
-.proces-est {
-  align-items: center;
-}
 @media (min-width: 1200px) {
   .list-section {
     position: relative;
-    margin-left: 12rem;
-    margin-right: 12rem;
+    padding-left: 19rem;
+    padding-right: 19rem;
   }
 }
 .icon-box {
@@ -11475,6 +11478,58 @@ font-size: 35px;
   }
 }
 
+/* Estimate */
+.estimate-link {
+  text-decoration: underline;
+  color:#575757;
+}
+.estimate-link:hover {
+  text-decoration: none;
+  color: #95D8FF;
+}
+.estimate-title {
+  color: #212529;
+}
+.estimate-text {
+  color: #303030;
+}
+.estimate .icon-box {
+  padding: 20px 15px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.2);
+  border-radius: 8px;
+  text-align: center;
+  z-index: 1;
+}
+.estimate .icon {
+  margin: 0 auto 30px auto;
+  padding-top: 10px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #6ca3cd;
+}
+
+.estimate .icon i {
+  font-size: 36px;
+  line-height: 1;
+  color: #fff;
+}
+
+.estimate .title a {
+  color: #111;
+}
+
+
+@media (max-width: 768px) {
+  .estimate .icon-box::before {
+    bottom: 60%;
+  }
+}
 
 /* Facts section */
 .facts .count-box {
