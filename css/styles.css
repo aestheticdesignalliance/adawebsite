@@ -4171,6 +4171,11 @@ textarea.form-control-lg {
 }
 
 /* Reviews section cards */
+.reviews-margin {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
 
 .reviews-section {
   padding-top: 2rem;
