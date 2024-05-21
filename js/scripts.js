@@ -78,3 +78,31 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+//   Image slideshow slider
+  new Swiper('.slideshow-slider', {
+    speed: 1000,
+    loop: true,
+    autoplay: {
+      delay: 500,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      }
+    }
+  });
+
