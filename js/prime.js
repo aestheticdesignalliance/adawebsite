@@ -1,6 +1,7 @@
 /* Prime Build: lightweight navigation, motion and accessible project galleries. */
 (() => {
   'use strict';
+  document.documentElement.classList.add('has-js');
 
   const header = document.querySelector('.site-header');
   const toggle = document.querySelector('.menu-toggle');
@@ -98,10 +99,6 @@
     thumbs.querySelectorAll('button').forEach((button, i) => {
       button.setAttribute('aria-current', String(i === activeImage));
     });
-    const currentThumb = thumbs.children[activeImage];
-    if (currentThumb && currentThumb.scrollIntoView) {
-      currentThumb.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'instant' });
-    }
   }
 
   function openProject(projectId, trigger) {
@@ -131,7 +128,12 @@
   }
 
   document.querySelectorAll('[data-project]').forEach(button => {
-    button.addEventListener('click', () => openProject(button.dataset.project, button));
+    button.addEventListener('click', event => {
+      if (typeof dialog.showModal === 'function') {
+        event.preventDefault();
+        openProject(button.dataset.project, button);
+      }
+    });
   });
   prev.addEventListener('click', () => { activeImage -= 1; renderImage(); });
   next.addEventListener('click', () => { activeImage += 1; renderImage(); });
