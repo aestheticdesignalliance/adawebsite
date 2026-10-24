@@ -317,3 +317,83 @@ svg {vertical-align:middle}
   .legal-content .container {width:calc(100% - 38px)}
   .legal-content h3.privacy-subtitle {font-size:29px}
 }
+
+
+/* Prime Build story, credentials and client-first contact */
+.values-section {background:#141e20;padding:124px 0 127px;color:#f8f6f1}
+.values-heading {display:flex;flex-direction:column;align-items:flex-start}
+.values-heading .section-heading {color:#f8f6f1;max-width:840px}
+.values-heading .section-heading em {color:var(--gold-bright)}
+.values-heading .section-intro {color:#c8ccca;max-width:600px;margin:30px 0 0}
+.values-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin:58px 0 59px;border-top:1px solid rgba(255,255,255,.24);border-bottom:1px solid rgba(255,255,255,.24)}
+.value-card {padding:35px 40px 41px 0;min-width:0}
+.value-card+.value-card {padding-left:35px;border-left:1px solid rgba(255,255,255,.16)}
+.value-number {display:block;font:500 28px/1 var(--font-serif);color:var(--gold-bright);margin-bottom:22px}
+.value-card h3 {font:500 37px/1.05 var(--font-serif);margin:0 0 15px;letter-spacing:-.018em;max-width:265px}
+.value-card p {font-size:12px;line-height:1.95;color:#bec8c4;max-width:300px;margin:0}
+.license-panel {display:grid;grid-template-columns:72px 1fr auto;gap:27px;align-items:center;background:#f0ebe1;color:#111b1d;padding:35px 37px}
+.license-panel-icon {width:61px;height:61px;border:1px solid var(--gold-dark);border-radius:50%;color:#946d3b;display:grid;place-items:center;font-size:28px;font-weight:500}
+.license-panel-copy h3 {font:500 31px/1.18 var(--font-serif);margin:7px 0 10px;letter-spacing:-.015em}
+.license-panel-copy p {font-size:12px;line-height:1.85;color:#4d5657;max-width:730px;margin:0 0 12px}
+.license-number {font-size:11px;color:#303b3d;letter-spacing:.03em}
+.license-number strong {font-weight:800}
+.license-verify {align-self:center;color:var(--ink);white-space:nowrap}
+.faq-section {background:#f4f0e8;padding:115px 0 122px}
+.faq-grid {display:grid;grid-template-columns:.95fr 1.05fr;gap:8.5%;align-items:start}
+.faq-intro .section-heading {font-size:clamp(51px,5.5vw,79px);margin-bottom:26px}
+.faq-intro>p {max-width:425px;font-size:14px;line-height:1.95;color:var(--muted);margin:0 0 28px}
+.faq-items {border-top:1px solid #b7b6af}
+.faq-items details {border-bottom:1px solid #b7b6af}
+.faq-items summary {position:relative;display:block;padding:25px 40px 25px 0;font-size:14px;font-weight:700;line-height:1.7;color:#1c282a;list-style:none;cursor:pointer}
+.faq-items summary::-webkit-details-marker {display:none}
+.faq-items summary::after {content:"+";position:absolute;right:2px;top:18px;font:400 32px/1.2 var(--font-serif);color:var(--gold-dark)}
+.faq-items details[open] summary::after {content:"−"}
+.faq-items details[open] summary {color:#966f3c}
+.faq-items details p {margin:0;padding:0 26px 25px 0;font-size:13px;line-height:1.9;color:#546064}
+.faq-items details p a {text-decoration:underline;text-underline-offset:3px;color:#7c5d34}
+.contact-cta {display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:24px}
+.contact-cta .button {margin-top:0}
+.contact-grid .contact-hint {font-size:11px;line-height:1.8;margin:18px 0 0;max-width:460px;color:#b9c3bf}
+.footer-license {display:flex;justify-content:space-between;gap:14px;align-items:center;border-top:1px solid rgba(255,255,255,.10);padding:21px 0;color:#b9c5c1;font-size:10px;line-height:1.9;letter-spacing:.03em}
+.footer-license strong {color:#f1d2a7;font-weight:700;white-space:nowrap}
+.footer-license a {font-weight:800;color:#d7ba8d;text-decoration:underline;text-underline-offset:4px;white-space:nowrap}
+.footer-license a:hover {color:#f4ddb7}
+.mobile-contact-bar {display:none}
+@media(max-width:1080px) {
+ .license-panel {grid-template-columns:62px 1fr;gap:16px}
+ .license-verify {grid-column:2;justify-self:start}
+}
+@media(max-width:920px) {
+ .values-grid {grid-template-columns:1fr;gap:0}
+ .value-card,.value-card+.value-card {padding:27px 0 30px;border-left:0}
+ .value-card+.value-card {border-top:1px solid rgba(255,255,255,.16)}
+ .value-card h3 {max-width:none}
+ .faq-grid {grid-template-columns:1fr;gap:42px}
+ .faq-intro .section-heading {font-size:clamp(53px,7vw,76px)}
+}
+@media(max-width:630px) {
+ .values-section,.faq-section {padding:78px 0 83px}
+ .values-grid {margin:35px 0}
+ .value-card h3 {font-size:34px}
+ .value-card p {font-size:13px}
+ .license-panel {display:flex;flex-direction:column;align-items:flex-start;gap:13px;padding:25px 22px}
+ .license-panel-icon {width:49px;height:49px;font-size:24px}
+ .license-panel-copy h3 {font-size:29px}
+ .license-panel-copy p {font-size:12px}
+ .license-verify {font-size:10px;white-space:normal;margin-top:7px}
+ .faq-intro .section-heading {font-size:clamp(52px,11vw,70px)}
+ .faq-items summary {font-size:13px;padding-top:23px;padding-bottom:23px}
+ .contact-cta {align-items:stretch}
+ .contact-cta .button {flex:1 0 100%}
+ .footer-license {flex-direction:column;align-items:flex-start;gap:6px}
+ body {padding-bottom:68px}
+ .mobile-contact-bar {position:fixed;bottom:0;left:0;right:0;z-index:90;display:grid;grid-template-columns:1fr 1.3fr;background:#0c1416;border-top:1px solid #9a784e;box-shadow:0 -6px 22px rgba(0,0,0,.17);height:68px;align-items:stretch}
+ .mobile-contact-bar a {display:flex;align-items:center;justify-content:center;min-width:0;min-height:50px;color:#f5f0e6;font-size:12px;font-weight:800;letter-spacing:.03em}
+ .mobile-contact-bar a:first-child {border-right:1px solid rgba(255,255,255,.25)}
+ .mobile-contact-bar a:last-child {color:#111a1b;background:#d5b481;margin:9px 9px 9px 0}
+ .mobile-contact-bar a:active {filter:brightness(.9)}
+ .nav-panel.open {z-index:101}
+}
+@media (prefers-reduced-motion: reduce) {
+ .mobile-contact-bar a,.faq-items summary {transition:none}
+}
