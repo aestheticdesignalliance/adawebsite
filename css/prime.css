@@ -175,7 +175,7 @@ svg {vertical-align:middle}
 .project-card:hover img {transform:scale(1.05)}
 .project-card-image::after {content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,16,17,.35),transparent 40%)}
 .project-card-image .view-gallery {position:absolute;z-index:1;bottom:20px;right:20px;padding:12px 15px;background:var(--gold);color:#111;font-size:9px;text-transform:uppercase;font-weight:800;letter-spacing:.13em}
-.project-card-meta {display:flex;justify-content:space-between;align-items:center;padding:18px 0 8px;border-bottom:1px solid var(--line)}
+ .project-card-meta {display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;padding:18px 0 8px;border-bottom:1px solid var(--line)}
 .project-card-title {font:500 36px/1 var(--font-serif)}
 .project-card-category {font-weight:800;font-size:9px;letter-spacing:.13em;color:var(--gold-dark);text-transform:uppercase}
 .portfolio-note {margin-top:70px;padding:30px 35px;background:#e8e0d3;display:flex;justify-content:space-between;align-items:center;gap:20px}
