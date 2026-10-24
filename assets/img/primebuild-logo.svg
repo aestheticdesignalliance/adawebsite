@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="86" viewBox="0 0 400 86" role="img" aria-label="Prime Build construction and renovation">
+<title>Prime Build</title>
+<g fill="none" stroke="#CBA977" stroke-width="2.7">
+ <path d="M11 65V28L36 10l25 18v37"/>
+ <path d="M22 65V32l14-10v43M50 65V32L36 22"/>
+ <path d="M8 69h56"/>
+</g>
+<g fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-weight="700">
+ <text x="82" y="48" font-size="30" letter-spacing="6">PRIME BUILD</text>
+</g>
+<text x="84" y="67" fill="#CBA977" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" letter-spacing="3">CONSTRUCTION + RENOVATION</text>
+</svg>

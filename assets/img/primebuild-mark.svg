@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72" role="img" aria-label="Prime Build architectural mark">
+  <title>Prime Build</title>
+  <g fill="none" stroke="#CBA977" stroke-linecap="square" stroke-linejoin="miter">
+    <path stroke-width="2.6" d="M10 59V26L36 8l26 18v33"/>
+    <path stroke-width="2.4" d="M20 59V30l16-11v40M52 59V30L36 19"/>
+    <path stroke-width="2.4" d="M30 59V37l6-4 6 4v22"/>
+    <path stroke-width="2.6" d="M7 63h58"/>
+  </g>
+</svg>
