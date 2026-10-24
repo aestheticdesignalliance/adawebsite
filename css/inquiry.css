@@ -102,3 +102,7 @@
  .thank-you-actions {flex-direction:column;align-items:stretch}
  .thank-you-actions .button {width:100%}
 }
+
+/* Direct-email fallback when the external form processor is unavailable. */
+.inquiry-processor-note a,.direct-inquiry-fallback {color:#77552f;text-decoration:underline;text-underline-offset:3px;font-weight:800}
+.inquiry-processor-note a:hover,.direct-inquiry-fallback:hover {color:#513718}
