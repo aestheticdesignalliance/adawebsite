@@ -71,6 +71,33 @@
     'upperwest': { name: 'Upper West Side', photos: ['upperwest-1.png','upperwest-2.png','upperwest-3.png','upperwest-4.png'] }
   };
 
+
+  // Accessible collection filters: no third-party dependency, preserve deep links.
+  const filterButtons = Array.from(document.querySelectorAll('[data-portfolio-filter]'));
+  const projectCards = Array.from(document.querySelectorAll('.project-card[data-project]'));
+  const countLabel = document.getElementById('portfolio-count');
+  let activeFilter = 'all';
+
+  function applyFilter(category) {
+    activeFilter = category;
+    let visibleCount = 0;
+    projectCards.forEach(card => {
+      const show = category === 'all' || card.dataset.category === category;
+      card.hidden = !show;
+      if (show) visibleCount++;
+    });
+    filterButtons.forEach(btn => {
+      const active = btn.dataset.portfolioFilter === category;
+      btn.classList.toggle('active', active);
+      btn.setAttribute('aria-pressed', String(active));
+    });
+    if (countLabel) {
+      countLabel.textContent = visibleCount + (visibleCount === 1 ? ' selected project' : ' selected projects');
+    }
+  }
+  filterButtons.forEach(btn => btn.addEventListener('click', () => applyFilter(btn.dataset.portfolioFilter)));
+  applyFilter('all');
+
   const dialog = document.querySelector('#project-gallery');
   if (!dialog) return;
   const img = dialog.querySelector('#gallery-image');
@@ -78,72 +105,146 @@
   const counter = dialog.querySelector('#gallery-counter');
   const caption = dialog.querySelector('#gallery-caption');
   const thumbs = dialog.querySelector('#gallery-thumbs');
+  const description = dialog.querySelector('#gallery-description');
+  const copyButton = dialog.querySelector('#gallery-share');
+  const copyFeedback = dialog.querySelector('#gallery-link-feedback');
   const prev = dialog.querySelector('[data-gallery-prev]');
   const next = dialog.querySelector('[data-gallery-next]');
   const close = dialog.querySelector('[data-gallery-close]');
   let activeProject = null;
+  let projectKey = null;
   let activeImage = 0;
   let lastTrigger = null;
+  let openedByHash = false;
+
+  const categoryLabels = {
+    mccarter:'Development', bathroom:'Interiors', cooper:'Residential',
+    millbasin:'Residential', parkave:'Residential', parkslope:'Residential',
+    soho:'Residential', uppereast:'Residential', upperwest:'Residential'
+  };
+  const descriptions = {
+    mccarter: 'Explore selected architectural and development project imagery.',
+    bathroom: 'Explore selected bathroom detail and finish imagery.',
+    millbasin: 'View selected residential interior photographs.',
+    parkave: 'View selected residential interiors and finish details.',
+    parkslope: 'View selected residential project photographs.',
+    soho: 'View selected interior renovation photographs.',
+    uppereast: 'Explore selected Upper East Side project imagery.',
+    upperwest: 'Explore selected Upper West Side project imagery.',
+    cooper: 'Explore selected Cooper Avenue project imagery.'
+  };
 
   function renderImage() {
     if (!activeProject) return;
     const photos = activeProject.photos;
     activeImage = (activeImage + photos.length) % photos.length;
     const imgNumber = activeImage + 1;
-    img.src = base + photos[activeImage];
-    img.alt = activeProject.name + ', project photo ' + imgNumber;
-    caption.textContent = activeProject.name;
-    counter.textContent = imgNumber + ' / ' + photos.length;
+    const filename = photos[activeImage];
+    img.src = base + filename;
+    img.alt = activeProject.name + ', photograph ' + imgNumber + ' of ' + photos.length;
+    caption.textContent = activeProject.name + ' · ' + (categoryLabels[projectKey] || 'Project portfolio');
+    counter.textContent = 'Photograph ' + imgNumber + ' of ' + photos.length;
     prev.hidden = photos.length < 2;
     next.hidden = photos.length < 2;
     thumbs.querySelectorAll('button').forEach((button, i) => {
       button.setAttribute('aria-current', String(i === activeImage));
     });
+    const nextImage = photos[(activeImage + 1) % photos.length];
+    if (nextImage && nextImage !== filename) {
+      const preload = new Image();
+      preload.src = base + nextImage;
+    }
   }
 
-  function openProject(projectId, trigger) {
-    const project = projectList[projectId];
+  function openProject(id, trigger, fromLink) {
+    const project = projectList[id];
     if (!project || typeof dialog.showModal !== 'function') return;
+    if (dialog.open) dialog.close();
+    projectKey = id;
     activeProject = project;
     activeImage = 0;
-    lastTrigger = trigger;
+    lastTrigger = trigger || null;
+    openedByHash = Boolean(fromLink);
     heading.textContent = project.name;
+    description.textContent = descriptions[id] || 'Explore selected project photographs.';
+    copyFeedback.textContent = '';
     thumbs.replaceChildren();
     project.photos.forEach((name, i) => {
       const button = document.createElement('button');
       button.type = 'button';
-      button.setAttribute('aria-label', 'View photo ' + (i + 1));
+      button.setAttribute('aria-label', 'View photograph ' + (i + 1));
       button.setAttribute('aria-current', String(i === 0));
       const thumb = document.createElement('img');
       thumb.src = base + name;
       thumb.alt = '';
       thumb.loading = 'lazy';
+      thumb.decoding = 'async';
       button.appendChild(thumb);
-      button.addEventListener('click', () => { activeImage = i; renderImage(); });
+      button.addEventListener('click', () => {
+        activeImage = i;
+        renderImage();
+      });
       thumbs.appendChild(button);
     });
+    if (trigger && trigger.hidden) applyFilter('all');
     renderImage();
     dialog.showModal();
     close.focus();
+    if (!fromLink && history.replaceState) {
+      history.replaceState(null, '', window.location.pathname + window.location.search + '#project-' + id);
+    }
   }
 
-  document.querySelectorAll('[data-project]').forEach(button => {
-    button.addEventListener('click', event => {
-      if (typeof dialog.showModal === 'function') {
-        event.preventDefault();
-        openProject(button.dataset.project, button);
-      }
+  projectCards.forEach(card => {
+    card.addEventListener('click', event => {
+      if (typeof dialog.showModal !== 'function') return;
+      event.preventDefault();
+      openProject(card.dataset.project, card, false);
     });
   });
   prev.addEventListener('click', () => { activeImage -= 1; renderImage(); });
   next.addEventListener('click', () => { activeImage += 1; renderImage(); });
   close.addEventListener('click', () => dialog.close());
+
   dialog.addEventListener('click', event => {
     if (event.target === dialog) dialog.close();
   });
-  dialog.addEventListener('close', () => { if (lastTrigger) lastTrigger.focus(); });
-  dialog.addEventListener('keydown', event => {
-    if (event.key === 'ArrowRight') { event.preventDefault(); activeImage++; renderImage(); }
-    if (event.key === 'ArrowLeft') { event.preventDefault(); activeImage--; renderImage(); }
+  dialog.addEventListener('close', () => {
+    if (!openedByHash && window.location.hash.startsWith('#project-') && history.replaceState) {
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+    if (lastTrigger) lastTrigger.focus({ preventScroll: true });
+    activeProject = null;
+    projectKey = null;
   });
+
+  dialog.addEventListener('keydown', event => {
+    if (event.key === 'ArrowRight') {
+      event.preventDefault(); activeImage += 1; renderImage();
+    } else if (event.key === 'ArrowLeft') {
+      event.preventDefault(); activeImage -= 1; renderImage();
+    }
+  });
+
+  copyButton.addEventListener('click', async () => {
+    if (!projectKey) return;
+    const link = window.location.origin + window.location.pathname + '#project-' + projectKey;
+    try {
+      if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error('Clipboard unavailable');
+      await navigator.clipboard.writeText(link);
+      copyFeedback.textContent = 'Project link copied.';
+    } catch (error) {
+      copyFeedback.textContent = 'Copy this link: ' + link;
+    }
+  });
+
+  function activateProjectFromLink() {
+    const match = window.location.hash.match(/^#project-([a-z0-9_-]+)$/i);
+    if (!match || !projectList[match[1]] || dialog.open) return;
+    const trigger = projectCards.find(card => card.dataset.project === match[1]);
+    if (trigger && trigger.hidden) applyFilter('all');
+    openProject(match[1], trigger, true);
+  }
+  window.addEventListener('hashchange', activateProjectFromLink);
+  activateProjectFromLink();
 })();
