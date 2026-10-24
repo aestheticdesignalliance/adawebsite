@@ -1,0 +1,314 @@
+{
+  "purpose": "Prime Build public portfolio WebP optimization",
+  "original_images_preserved": true,
+  "quality": 82,
+  "max_dimensions_px": [
+    1920,
+    1440
+  ],
+  "images_optimized": 41,
+  "total_source_bytes": 35898570,
+  "total_webp_bytes": 2584868,
+  "total_savings_percent": 92.8,
+  "rewritten_site_files": [
+    "bathroom-remodeling-nyc.html",
+    "construction-management-nyc.html",
+    "exterior-facade-improvements-nyc.html",
+    "home-renovations-staten-island.html",
+    "index.html",
+    "kitchen-renovation-nyc.html",
+    "portfolio.html",
+    "js/prime.js",
+    "css/inquiry.css"
+  ],
+  "skipped_images": [],
+  "images": [
+    {
+      "original": "assets/img/portfolio/residential/McCarter-10.png",
+      "optimized": "assets/img/portfolio/residential/McCarter-10.webp",
+      "source_bytes": 1260277,
+      "webp_bytes": 112574,
+      "saved_percent": 91.1
+    },
+    {
+      "original": "assets/img/portfolio/residential/McCarter-11.png",
+      "optimized": "assets/img/portfolio/residential/McCarter-11.webp",
+      "source_bytes": 1334542,
+      "webp_bytes": 113572,
+      "saved_percent": 91.5
+    },
+    {
+      "original": "assets/img/portfolio/residential/McCarter-4.png",
+      "optimized": "assets/img/portfolio/residential/McCarter-4.webp",
+      "source_bytes": 1286860,
+      "webp_bytes": 58386,
+      "saved_percent": 95.5
+    },
+    {
+      "original": "assets/img/portfolio/residential/McCarter-5.png",
+      "optimized": "assets/img/portfolio/residential/McCarter-5.webp",
+      "source_bytes": 1033717,
+      "webp_bytes": 191204,
+      "saved_percent": 81.5
+    },
+    {
+      "original": "assets/img/portfolio/residential/McCarter-6.png",
+      "optimized": "assets/img/portfolio/residential/McCarter-6.webp",
+      "source_bytes": 1942005,
+      "webp_bytes": 345306,
+      "saved_percent": 82.2
+    },
+    {
+      "original": "assets/img/portfolio/residential/McCarter-7.png",
+      "optimized": "assets/img/portfolio/residential/McCarter-7.webp",
+      "source_bytes": 858112,
+      "webp_bytes": 48960,
+      "saved_percent": 94.3
+    },
+    {
+      "original": "assets/img/portfolio/residential/McCarter-8.png",
+      "optimized": "assets/img/portfolio/residential/McCarter-8.webp",
+      "source_bytes": 693809,
+      "webp_bytes": 47748,
+      "saved_percent": 93.1
+    },
+    {
+      "original": "assets/img/portfolio/residential/McCarter-9.png",
+      "optimized": "assets/img/portfolio/residential/McCarter-9.webp",
+      "source_bytes": 1110073,
+      "webp_bytes": 96610,
+      "saved_percent": 91.3
+    },
+    {
+      "original": "assets/img/portfolio/residential/bathroomtoto-1.png",
+      "optimized": "assets/img/portfolio/residential/bathroomtoto-1.webp",
+      "source_bytes": 238596,
+      "webp_bytes": 16984,
+      "saved_percent": 92.9
+    },
+    {
+      "original": "assets/img/portfolio/residential/bathroomtoto-2.png",
+      "optimized": "assets/img/portfolio/residential/bathroomtoto-2.webp",
+      "source_bytes": 214701,
+      "webp_bytes": 13038,
+      "saved_percent": 93.9
+    },
+    {
+      "original": "assets/img/portfolio/residential/cooperave-1.png",
+      "optimized": "assets/img/portfolio/residential/cooperave-1.webp",
+      "source_bytes": 304715,
+      "webp_bytes": 27114,
+      "saved_percent": 91.1
+    },
+    {
+      "original": "assets/img/portfolio/residential/millbasin-1.png",
+      "optimized": "assets/img/portfolio/residential/millbasin-1.webp",
+      "source_bytes": 894953,
+      "webp_bytes": 66548,
+      "saved_percent": 92.6
+    },
+    {
+      "original": "assets/img/portfolio/residential/millbasin-11.png",
+      "optimized": "assets/img/portfolio/residential/millbasin-11.webp",
+      "source_bytes": 793000,
+      "webp_bytes": 55120,
+      "saved_percent": 93.0
+    },
+    {
+      "original": "assets/img/portfolio/residential/millbasin-12.png",
+      "optimized": "assets/img/portfolio/residential/millbasin-12.webp",
+      "source_bytes": 878199,
+      "webp_bytes": 62298,
+      "saved_percent": 92.9
+    },
+    {
+      "original": "assets/img/portfolio/residential/millbasin-2.png",
+      "optimized": "assets/img/portfolio/residential/millbasin-2.webp",
+      "source_bytes": 781334,
+      "webp_bytes": 52346,
+      "saved_percent": 93.3
+    },
+    {
+      "original": "assets/img/portfolio/residential/millbasin-3.png",
+      "optimized": "assets/img/portfolio/residential/millbasin-3.webp",
+      "source_bytes": 478160,
+      "webp_bytes": 46986,
+      "saved_percent": 90.2
+    },
+    {
+      "original": "assets/img/portfolio/residential/millbasin-4.png",
+      "optimized": "assets/img/portfolio/residential/millbasin-4.webp",
+      "source_bytes": 711684,
+      "webp_bytes": 46926,
+      "saved_percent": 93.4
+    },
+    {
+      "original": "assets/img/portfolio/residential/millbasin-5.png",
+      "optimized": "assets/img/portfolio/residential/millbasin-5.webp",
+      "source_bytes": 726386,
+      "webp_bytes": 45758,
+      "saved_percent": 93.7
+    },
+    {
+      "original": "assets/img/portfolio/residential/millbasin-6.png",
+      "optimized": "assets/img/portfolio/residential/millbasin-6.webp",
+      "source_bytes": 762810,
+      "webp_bytes": 53510,
+      "saved_percent": 93.0
+    },
+    {
+      "original": "assets/img/portfolio/residential/millbasin-7.png",
+      "optimized": "assets/img/portfolio/residential/millbasin-7.webp",
+      "source_bytes": 676113,
+      "webp_bytes": 45546,
+      "saved_percent": 93.3
+    },
+    {
+      "original": "assets/img/portfolio/residential/millbasin-9.png",
+      "optimized": "assets/img/portfolio/residential/millbasin-9.webp",
+      "source_bytes": 914703,
+      "webp_bytes": 65160,
+      "saved_percent": 92.9
+    },
+    {
+      "original": "assets/img/portfolio/residential/parkave-1.png",
+      "optimized": "assets/img/portfolio/residential/parkave-1.webp",
+      "source_bytes": 877630,
+      "webp_bytes": 61306,
+      "saved_percent": 93.0
+    },
+    {
+      "original": "assets/img/portfolio/residential/parkave-2.png",
+      "optimized": "assets/img/portfolio/residential/parkave-2.webp",
+      "source_bytes": 888304,
+      "webp_bytes": 62226,
+      "saved_percent": 93.0
+    },
+    {
+      "original": "assets/img/portfolio/residential/parkave-3.png",
+      "optimized": "assets/img/portfolio/residential/parkave-3.webp",
+      "source_bytes": 810318,
+      "webp_bytes": 43738,
+      "saved_percent": 94.6
+    },
+    {
+      "original": "assets/img/portfolio/residential/parkslope-1.png",
+      "optimized": "assets/img/portfolio/residential/parkslope-1.webp",
+      "source_bytes": 546729,
+      "webp_bytes": 32322,
+      "saved_percent": 94.1
+    },
+    {
+      "original": "assets/img/portfolio/residential/parkslope-2.png",
+      "optimized": "assets/img/portfolio/residential/parkslope-2.webp",
+      "source_bytes": 2459748,
+      "webp_bytes": 80910,
+      "saved_percent": 96.7
+    },
+    {
+      "original": "assets/img/portfolio/residential/parkslope-3.png",
+      "optimized": "assets/img/portfolio/residential/parkslope-3.webp",
+      "source_bytes": 792594,
+      "webp_bytes": 64046,
+      "saved_percent": 91.9
+    },
+    {
+      "original": "assets/img/portfolio/residential/soho-1.png",
+      "optimized": "assets/img/portfolio/residential/soho-1.webp",
+      "source_bytes": 597889,
+      "webp_bytes": 41678,
+      "saved_percent": 93.0
+    },
+    {
+      "original": "assets/img/portfolio/residential/soho-2.png",
+      "optimized": "assets/img/portfolio/residential/soho-2.webp",
+      "source_bytes": 647057,
+      "webp_bytes": 47468,
+      "saved_percent": 92.7
+    },
+    {
+      "original": "assets/img/portfolio/residential/uppereast-1.png",
+      "optimized": "assets/img/portfolio/residential/uppereast-1.webp",
+      "source_bytes": 851337,
+      "webp_bytes": 44848,
+      "saved_percent": 94.7
+    },
+    {
+      "original": "assets/img/portfolio/residential/uppereast-2.png",
+      "optimized": "assets/img/portfolio/residential/uppereast-2.webp",
+      "source_bytes": 795859,
+      "webp_bytes": 47506,
+      "saved_percent": 94.0
+    },
+    {
+      "original": "assets/img/portfolio/residential/uppereast-3.png",
+      "optimized": "assets/img/portfolio/residential/uppereast-3.webp",
+      "source_bytes": 830271,
+      "webp_bytes": 52580,
+      "saved_percent": 93.7
+    },
+    {
+      "original": "assets/img/portfolio/residential/uppereast-4.png",
+      "optimized": "assets/img/portfolio/residential/uppereast-4.webp",
+      "source_bytes": 716041,
+      "webp_bytes": 38600,
+      "saved_percent": 94.6
+    },
+    {
+      "original": "assets/img/portfolio/residential/uppereast-5.png",
+      "optimized": "assets/img/portfolio/residential/uppereast-5.webp",
+      "source_bytes": 883405,
+      "webp_bytes": 52254,
+      "saved_percent": 94.1
+    },
+    {
+      "original": "assets/img/portfolio/residential/uppereast-6.png",
+      "optimized": "assets/img/portfolio/residential/uppereast-6.webp",
+      "source_bytes": 848854,
+      "webp_bytes": 44974,
+      "saved_percent": 94.7
+    },
+    {
+      "original": "assets/img/portfolio/residential/uppereast-7.png",
+      "optimized": "assets/img/portfolio/residential/uppereast-7.webp",
+      "source_bytes": 1048082,
+      "webp_bytes": 49454,
+      "saved_percent": 95.3
+    },
+    {
+      "original": "assets/img/portfolio/residential/uppereast-8.png",
+      "optimized": "assets/img/portfolio/residential/uppereast-8.webp",
+      "source_bytes": 720359,
+      "webp_bytes": 37598,
+      "saved_percent": 94.8
+    },
+    {
+      "original": "assets/img/portfolio/residential/upperwest-1.png",
+      "optimized": "assets/img/portfolio/residential/upperwest-1.webp",
+      "source_bytes": 546571,
+      "webp_bytes": 31448,
+      "saved_percent": 94.2
+    },
+    {
+      "original": "assets/img/portfolio/residential/upperwest-2.png",
+      "optimized": "assets/img/portfolio/residential/upperwest-2.webp",
+      "source_bytes": 1212379,
+      "webp_bytes": 36624,
+      "saved_percent": 97.0
+    },
+    {
+      "original": "assets/img/portfolio/residential/upperwest-3.png",
+      "optimized": "assets/img/portfolio/residential/upperwest-3.webp",
+      "source_bytes": 832613,
+      "webp_bytes": 40772,
+      "saved_percent": 95.1
+    },
+    {
+      "original": "assets/img/portfolio/residential/upperwest-4.png",
+      "optimized": "assets/img/portfolio/residential/upperwest-4.webp",
+      "source_bytes": 1097781,
+      "webp_bytes": 62822,
+      "saved_percent": 94.3
+    }
+  ]
+}
