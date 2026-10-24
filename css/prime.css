@@ -408,3 +408,41 @@ svg {vertical-align:middle}
  .portfolio-license-note {margin:0 0 25px;padding:13px 15px;font-size:10px;gap:8px}
  .portfolio-license-note a {white-space:normal}
 }
+
+
+/* Prime Build / social presence */
+.footer-socials {display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:25px}
+.footer-socials a {display:inline-flex;gap:9px;align-items:center;padding:10px 14px;border:1px solid rgba(218,189,148,.35);color:#f0eadf;font-size:10px;font-weight:800;letter-spacing:.04em;transition:color .2s,background .2s,border-color .2s}
+.footer-socials a:hover {color:#121a1d;background:var(--gold);border-color:var(--gold)}
+.footer-socials svg {width:17px;height:17px;display:block;flex-shrink:0}
+.social-feature {padding:100px 0;background:#f2ede4;border-top:1px solid #ded8cf}
+.social-feature-grid {display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:9%}
+.social-feature-heading h2 {font-size:clamp(50px,6vw,83px);line-height:.96;letter-spacing:-.04em;margin:22px 0 24px}
+.social-feature-heading h2 em {font-weight:400;color:var(--gold-dark)}
+.social-feature-heading p {font-size:13px;line-height:1.9;color:#5e696a;max-width:440px;margin:0}
+.social-feature-list {border-top:1px solid #c6c0b6}
+.social-feature-link {display:grid;grid-template-columns:54px minmax(0,1fr) 24px;gap:20px;align-items:center;border-bottom:1px solid #c6c0b6;padding:20px 4px;transition:background .2s}
+.social-feature-link:hover {background:rgba(228,213,192,.45)}
+.social-feature-icon {width:51px;height:51px;display:grid;place-items:center;border:1px solid #baa788;color:#916b3c}
+.social-feature-icon svg {width:23px;height:23px}
+.social-feature-text {display:flex;flex-direction:column;gap:5px;min-width:0}
+.social-feature-text>span {font-size:9px;font-weight:800;letter-spacing:.16em;color:#83633d;text-transform:uppercase}
+.social-feature-text strong {font-size:clamp(12px,1.25vw,16px);font-weight:700;line-height:1.5;color:#1b2729;overflow-wrap:anywhere}
+.social-feature-arrow {font-size:22px;color:#957349}
+@media(max-width:920px){
+  .social-feature-grid {grid-template-columns:1fr;gap:33px}
+  .social-feature-list {max-width:650px;width:100%}
+}
+@media(max-width:630px){
+  .social-feature {padding:75px 0 82px}
+  .social-feature-heading h2 {font-size:clamp(54px,12vw,72px)}
+  .social-feature-link {gap:12px;grid-template-columns:46px minmax(0,1fr) 20px;padding:17px 2px}
+  .social-feature-icon {width:43px;height:43px}
+  .social-feature-icon svg {width:21px;height:21px}
+  .social-feature-text strong {font-size:12px}
+  .footer-socials {gap:9px;margin-top:20px}
+  .footer-socials a {font-size:10px}
+}
+@media(prefers-reduced-motion:reduce){
+  .social-feature-link,.footer-socials a {transition:none}
+}
