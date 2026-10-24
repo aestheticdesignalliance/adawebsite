@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#10191b">
-  <meta name="description" content="Explore Prime Build’s NYC renovation projects. Licensed home improvement, meticulous craftsmanship, and professional construction management.">
+  <meta name="description" content="Explore Prime Build project galleries across NYC: residential renovations, interiors and development photography. Explore our work and request a consultation.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Selected Projects | Prime Build">
+  <meta property="og:title" content="Prime Build NYC Renovation Project Portfolio">
   <meta property="og:description" content="Explore craftsmanship and construction through Prime Build's selected project galleries.">
   <meta property="og:url" content="https://primebuild.nyc/portfolio.html">
   <meta property="og:image" content="https://primebuild.nyc/assets/img/portfolio/residential/parkave-1.png">
@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/prime.css">
-  <title>Prime Build Projects | NYC Renovation Portfolio</title>
+  <title>NYC Renovation &amp; Project Portfolio | Prime Build</title>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -52,45 +52,63 @@
       <div class="wrap">
         <div class="portfolio-intro">
           <div><span class="eyebrow">01 / Project collection</span><h2 class="serif section-heading" id="portfolio-grid-heading">Selected projects</h2></div>
-          <p>Explore the photographs behind each project. Select a project to open its image gallery.</p>
+          <p>Browse project photographs by category. Open each gallery, explore the details, and share individual project links.</p>
         </div>
         <div class="portfolio-license-note"><span>Prime Build · NYC DCWP Home Improvement Contractor · License No. <strong>2126717-DCWP</strong></span><a href="https://www.nyc.gov/site/dca/consumers/check-license.page" target="_blank" rel="noopener noreferrer">Verify License ↗</a></div>
+        <div class="portfolio-toolbar" aria-label="Explore project types">
+          <div class="portfolio-filter-group" role="group" aria-label="Filter the project portfolio">
+            <button class="portfolio-filter active" type="button" data-portfolio-filter="all" aria-pressed="true">All Projects</button>
+            <button class="portfolio-filter" type="button" data-portfolio-filter="residential" aria-pressed="false">Residential</button>
+            <button class="portfolio-filter" type="button" data-portfolio-filter="interiors" aria-pressed="false">Interiors</button>
+            <button class="portfolio-filter" type="button" data-portfolio-filter="development" aria-pressed="false">Development</button>
+          </div>
+          <span class="portfolio-count" id="portfolio-count" aria-live="polite">9 selected projects</span>
+        </div>
         <div class="project-grid">
-          <a class="project-card reveal" id="project-millbasin" data-project="millbasin" href="assets/img/portfolio/residential/millbasin-1.png" aria-label="Open Brooklyn Mill Basin project photo gallery">
+          <a class="project-card reveal" id="project-millbasin" data-project="millbasin" data-category="residential" href="assets/img/portfolio/residential/millbasin-1.png" aria-label="Open Brooklyn Mill Basin project photo gallery">
             <span class="project-card-image"><img src="assets/img/portfolio/residential/millbasin-1.png" alt="Brooklyn Mill Basin renovation project" loading="lazy"><span class="view-gallery">View Gallery ↗</span></span>
             <span class="project-card-meta"><span class="project-card-title">Brooklyn Mill Basin</span><span class="project-card-category">Residential</span></span>
+              <span class="project-photo-count">View 10 selected images <span aria-hidden="true">↗</span></span>
           </a>
-          <a class="project-card reveal" id="project-parkave" data-project="parkave" href="assets/img/portfolio/residential/parkave-1.png" aria-label="Open Park Avenue project photo gallery">
+          <a class="project-card reveal" id="project-parkave" data-project="parkave" data-category="residential" href="assets/img/portfolio/residential/parkave-1.png" aria-label="Open Park Avenue project photo gallery">
             <span class="project-card-image"><img src="assets/img/portfolio/residential/parkave-1.png" alt="Park Avenue renovation project" loading="lazy"><span class="view-gallery">View Gallery ↗</span></span>
             <span class="project-card-meta"><span class="project-card-title">Park Avenue</span><span class="project-card-category">Residential</span></span>
+              <span class="project-photo-count">View 3 selected images <span aria-hidden="true">↗</span></span>
           </a>
-          <a class="project-card reveal" id="project-mccarter" data-project="mccarter" href="assets/img/portfolio/residential/McCarter-4.png" aria-label="Open McCarter Highway project photo gallery">
+          <a class="project-card reveal" id="project-mccarter" data-project="mccarter" data-category="development" href="assets/img/portfolio/residential/McCarter-4.png" aria-label="Open McCarter Highway project photo gallery">
             <span class="project-card-image"><img src="assets/img/portfolio/residential/McCarter-4.png" alt="McCarter Highway residential development" loading="lazy"><span class="view-gallery">View Gallery ↗</span></span>
             <span class="project-card-meta"><span class="project-card-title">McCarter Highway</span><span class="project-card-category">Development</span></span>
+              <span class="project-photo-count">View 8 selected images <span aria-hidden="true">↗</span></span>
           </a>
-          <a class="project-card reveal" id="project-soho" data-project="soho" href="assets/img/portfolio/residential/soho-1.png" aria-label="Open SoHo project photo gallery">
+          <a class="project-card reveal" id="project-soho" data-project="soho" data-category="residential" href="assets/img/portfolio/residential/soho-1.png" aria-label="Open SoHo project photo gallery">
             <span class="project-card-image"><img src="assets/img/portfolio/residential/soho-1.png" alt="SoHo residential renovation" loading="lazy"><span class="view-gallery">View Gallery ↗</span></span>
             <span class="project-card-meta"><span class="project-card-title">SoHo</span><span class="project-card-category">Residential</span></span>
+              <span class="project-photo-count">View 2 selected images <span aria-hidden="true">↗</span></span>
           </a>
-          <a class="project-card reveal" id="project-uppereast" data-project="uppereast" href="assets/img/portfolio/residential/uppereast-1.png" aria-label="Open Upper East Side project photo gallery">
+          <a class="project-card reveal" id="project-uppereast" data-project="uppereast" data-category="residential" href="assets/img/portfolio/residential/uppereast-1.png" aria-label="Open Upper East Side project photo gallery">
             <span class="project-card-image"><img src="assets/img/portfolio/residential/uppereast-1.png" alt="Upper East Side residential renovation" loading="lazy"><span class="view-gallery">View Gallery ↗</span></span>
             <span class="project-card-meta"><span class="project-card-title">Upper East Side</span><span class="project-card-category">Residential</span></span>
+              <span class="project-photo-count">View 8 selected images <span aria-hidden="true">↗</span></span>
           </a>
-          <a class="project-card reveal" id="project-upperwest" data-project="upperwest" href="assets/img/portfolio/residential/upperwest-1.png" aria-label="Open Upper West Side project photo gallery">
+          <a class="project-card reveal" id="project-upperwest" data-project="upperwest" data-category="residential" href="assets/img/portfolio/residential/upperwest-1.png" aria-label="Open Upper West Side project photo gallery">
             <span class="project-card-image"><img src="assets/img/portfolio/residential/upperwest-1.png" alt="Upper West Side residential renovation" loading="lazy"><span class="view-gallery">View Gallery ↗</span></span>
             <span class="project-card-meta"><span class="project-card-title">Upper West Side</span><span class="project-card-category">Residential</span></span>
+              <span class="project-photo-count">View 4 selected images <span aria-hidden="true">↗</span></span>
           </a>
-          <a class="project-card reveal" id="project-parkslope" data-project="parkslope" href="assets/img/portfolio/residential/parkslope-1.png" aria-label="Open Park Slope project photo gallery">
+          <a class="project-card reveal" id="project-parkslope" data-project="parkslope" data-category="residential" href="assets/img/portfolio/residential/parkslope-1.png" aria-label="Open Park Slope project photo gallery">
             <span class="project-card-image"><img src="assets/img/portfolio/residential/parkslope-1.png" alt="Park Slope residential renovation" loading="lazy"><span class="view-gallery">View Gallery ↗</span></span>
             <span class="project-card-meta"><span class="project-card-title">Park Slope</span><span class="project-card-category">Residential</span></span>
+              <span class="project-photo-count">View 3 selected images <span aria-hidden="true">↗</span></span>
           </a>
-          <a class="project-card reveal" id="project-cooper" data-project="cooper" href="assets/img/portfolio/residential/cooperave-1.png" aria-label="Open Cooper Avenue project photo gallery">
+          <a class="project-card reveal" id="project-cooper" data-project="cooper" data-category="residential" href="assets/img/portfolio/residential/cooperave-1.png" aria-label="Open Cooper Avenue project photo gallery">
             <span class="project-card-image"><img src="assets/img/portfolio/residential/cooperave-1.png" alt="Cooper Avenue residential renovation" loading="lazy"><span class="view-gallery">View Gallery ↗</span></span>
             <span class="project-card-meta"><span class="project-card-title">Cooper Avenue</span><span class="project-card-category">Residential</span></span>
+              <span class="project-photo-count">View 1 selected image <span aria-hidden="true">↗</span></span>
           </a>
-          <a class="project-card reveal" id="project-bathroom" data-project="bathroom" href="assets/img/portfolio/residential/bathroomtoto-1.png" aria-label="Open Bathroom Toto project photo gallery">
+          <a class="project-card reveal" id="project-bathroom" data-project="bathroom" data-category="interiors" href="assets/img/portfolio/residential/bathroomtoto-1.png" aria-label="Open Bathroom Toto project photo gallery">
             <span class="project-card-image"><img src="assets/img/portfolio/residential/bathroomtoto-1.png" alt="Bathroom Toto renovation" loading="lazy"><span class="view-gallery">View Gallery ↗</span></span>
             <span class="project-card-meta"><span class="project-card-title">Bathroom Toto</span><span class="project-card-category">Interiors</span></span>
+              <span class="project-photo-count">View 2 selected images <span aria-hidden="true">↗</span></span>
           </a>
         </div>
         <div class="portfolio-note">
@@ -107,13 +125,21 @@
         <div><span class="eyebrow light">Prime Build / Project gallery</span><h2 id="gallery-title">Project gallery</h2></div>
         <button class="gallery-close" data-gallery-close type="button" aria-label="Close gallery">×</button>
       </div>
-      <div class="gallery-main">
+      <p class="gallery-project-description" id="gallery-description">Explore selected project photography.</p>
+        <div class="gallery-main">
         <button class="gallery-nav" data-gallery-prev type="button" aria-label="Previous photo">‹</button>
         <figure><img id="gallery-image" alt="Project photograph"><figcaption id="gallery-caption"></figcaption></figure>
         <button class="gallery-nav" data-gallery-next type="button" aria-label="Next photo">›</button>
       </div>
       <div class="gallery-thumbs" id="gallery-thumbs" aria-label="Project photo thumbnails"></div>
-      <p class="gallery-counter" id="gallery-counter" aria-live="polite"></p>
+      <div class="gallery-bottom">
+        <span class="gallery-counter" id="gallery-counter" aria-live="polite"></span>
+        <div class="gallery-bottom-links">
+          <button type="button" class="gallery-share" id="gallery-share" aria-label="Copy a direct link to this project">Copy Project Link <span aria-hidden="true">↗</span></button>
+          <a href="inquiry.html" class="gallery-consult">Discuss a Similar Project <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <p id="gallery-link-feedback" class="gallery-link-feedback" role="status" aria-live="polite"></p>
     </div>
   </dialog>
 
